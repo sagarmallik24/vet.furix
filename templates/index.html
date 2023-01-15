@@ -1,0 +1,625 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Furix - Get Quality Veterinary</title>
+  <meta name="title" content="Furix - Get Quality Furniture">
+  <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'images/hero-product-1.jpg' %}">
+  <link rel="preload" as="image" href="./assets/images/hero-product-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-product-3.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-product-4.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-product-5.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+{% include 'navbar.html' %}
+
+  <!-- 
+    - #HEADER END
+  -->
+<br>
+<br>
+
+  <main>
+    <article>
+
+
+      <!-- 
+        - #HERO
+      -->
+      <br>
+      <br>
+      <section class="hero" id="home" style="background-image: url({% static 'images/hero-banner.jpg' %})">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Expertly crafted</p>
+
+            <h2 class="h1 hero-title">Veterinary Machines</h2>
+
+            <button class="btn btn-primary">Shop Now</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="{% static 'images/service-icon-1.svg' %}" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Free Shipping</p>
+
+                <p class="service-item-text">On All Order Over $599</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="{% static 'images/service-icon-2.svg' %}" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Easy Returns</p>
+
+                <p class="service-item-text">30 Day Returns Policy</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="{% static 'images/service-icon-3.svg' %}" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Secure Payment</p>
+
+                <p class="service-item-text">100% Secure Gaurantee</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="{% static 'images/service-icon-4.svg' %}" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Special Support</p>
+
+                <p class="service-item-text">24/7 Dedicated Support</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <br><br>
+          <h2 class="section-title">Furix Store</h2>
+
+          <p class="section-text">
+            We transform you into a better vet tech and veterinarian. We help vets learn from one another, discuss the integration of 
+            technology, share cost-saving strategies, and build professional networks.
+          </p>
+
+          <div class="about-card">
+            <figure class="card-banner img-holder" style="--width: 1170; --height: 450;">
+              <!-- <img src="./assets/images/about-banner.jpg" width="1170" height="450" loading="lazy" alt="Woodex promo" -->
+              <img src="{% static 'images/new 5.jpg' %}" width="1170" height="450" loading="lazy" alt="Woodex promo"
+                class="img-cover">
+            </figure>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+
+      <!-- <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <ul class="hero-list">
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="./assets/images/hero-product-1.jpg" width="285" height="396" alt="Art Deco Home"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Art Deco Home</a>
+                  </h3>
+
+                  <p class="card-text">Decoration</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 568; --height: 389;">
+                  <img src="./assets/images/hero-product-2.jpg" width="568" height="389" alt="Helen Chair"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Helen Chair</a>
+                  </h3>
+
+                  <p class="card-text">Decoration</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="./assets/images/hero-product-3.jpg" width="285" height="396" alt="Vase Of Flowers"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Vase Of Flowers</a>
+                  </h3>
+
+                  <p class="card-text">Decoration</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="./assets/images/hero-product-4.jpg" width="580" height="213" alt="Wood Eggs"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Wood Eggs</a>
+                  </h3>
+
+                  <p class="card-text">Decoration</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="./assets/images/hero-product-5.jpg" width="580" height="213" alt="Table Wood Pine"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Table Wood Pine</a>
+                  </h3>
+
+                  <p class="card-text">Furniture</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+
+
+
+
+
+
+
+      <!-- 
+        - #PRODUCTS
+      -->
+
+
+
+      <section class="section product" id="product" aria-label="product">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Popular Products</h2>
+
+            <ul class="filter-btn-list">
+
+              <li class="filter-btn-item">
+                <button class="filter-btn active" data-filter-btn="all">All Products</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="accessory">Accessory</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="decoration">Monitoring</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="furniture">Surgical</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="furniture">Housing and Care</button>
+              </li>
+
+            </ul>
+          </div>
+
+          <ul class="grid-list product-list" data-filter="all">
+
+	    {% for product in products %}
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="{% url 'product_info' product.pk %}" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="{{ product.images.url }}" width="300" height="300" loading="lazy"
+                    alt="Animi Dolor Pariatur" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <!-- <ul class="badge-list">
+
+                    <li>
+                      <div class="badge orange">Sale</div>
+                    </li>
+
+                    <li>
+                      <div class="badge cyan">-10%</div>
+                    </li>
+                    
+                  </ul> -->
+
+                  <!-- <div class="card-badge">Out of Stock</div> -->
+
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="{% url 'product_info' product.pk %}" class="card-title">{{ product.product_name }}</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <!-- <del class="del">${{ product.price }}</del> -->
+
+                    <!-- <data class="price" value="10">${{ product.price }}</data> -->
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            {% endfor %}
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+
+
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <div class="card-content">
+              <h2 class="h2 section-title">Our Newsletter</h2>
+
+              <p class="section-text">
+                Subscribe our newsletter and get discount 50% off
+              </p>
+            </div>
+
+            <form action="" class="card-form">
+              <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+              <button type="submit" class="newsletter-btn" aria-label="subscribe">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+      
+
+
+    </article>
+  </main>
+
+
+
+
+<!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Latest Veterinary news</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="https://news.ncsu.edu/wp-content/uploads/2021/08/boxer.jpg" alt="Worthy Cyber Monday Fashion From Casmart" loading="lazy"
+                      width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Veterinary</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">31 Mar 2021</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Artificial Intelligence in Veterinary Medicine Raises Ethical Challenges</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="https://globalnews.ca/wp-content/uploads/2023/01/CP25007297.jpg?quality=85&strip=all&w=1200" alt="Holiday Home Decoration I’ve Recently Ordered"
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Veterinary</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">31 Mar 2021</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Saskatchewan veterinary expert weighs in on shortage of domestic</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/18B5/production/_128052360_vetmedicine_getty.jpg.webp" alt="Unique Ideas for Fashion You Haven’t heard yet"
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Veterinary</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">31 Mar 2021</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">EU moves to ensure animal medicine supplies</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+ {% include 'footer.html' %}
+
+  <!-- 
+    - #FOOTER END
+  -->
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'js/script.js' %}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
