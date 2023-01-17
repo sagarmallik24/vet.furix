@@ -51,6 +51,7 @@
 
 </head>
 
+
 <body id="top">
 
   <!-- 
@@ -80,28 +81,28 @@
                                 <div id="form-message-warning" class="mb-4"></div> 
                           <div id="form-message-success" class="mb-4">
                         Your message was sent, thank you!
-                          </div>
-                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                          </div>auto
+                                <form method="POST" id="contactForm" name="contactForm" class="contactForm" onsubmit="submitForm()">
                                     {% csrf_token %}
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name" onchange="formValue(this.value)" placeholder="Name">
+                                                <input type="text" class="form-control" name="name" id="name" onchange="formValueName(this.value)" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="col-md-12"> 
                                             <div class="form-group">
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                <input type="email" class="form-control" name="email" id="email" onchange="formValueEmail(this.value)" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                <input type="text" class="form-control" name="subject" id="subject" onchange="formValueSubject(this.value)" placeholder="Subject">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                <textarea name="message" class="form-control" id="message" cols="30" onchange="formValueMessage(this.value)" rows="6" placeholder="Message"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -217,10 +218,58 @@
   </a>
 
 <script>
+  let name = ""
+  let email = ""
+  let subject = ""
+  let message = ""
 
-    function formValue(e){
 
-    }
+  function formValueName(e){
+    name = e
+  }
+  function formValueEmail(e){
+    email = e
+  }  
+  function formValueSubject(e){
+    subject = e
+  }  
+  function formValueMessage(e){
+    message = e
+  }
+
+function collectValue(){
+  let name = document.getElementById()
+  
+}
+
+function submitForm(){
+  console.log(name,email,subject,message)
+  console.log("submitForm CLICKED")
+fetch("https://sheetdb.io/api/v1/ms597sxbhajfx", {
+     
+     // Adding method type
+     method: "POST",
+      
+     // Adding body or contents to send
+     body: JSON.stringify({
+         Name: name,
+         Email: email,
+         Subject: subject,
+         Message: message
+     }),
+      
+     // Adding headers to the request
+     headers: {
+         "Content-type": "application/json; charset=UTF-8"
+     }
+ })
+  
+ // Converting to JSON
+ .then(response => response.json())
+  
+ // Displaying results to console
+ .then(json => console.log(json));
+}
 </script>
 
 
@@ -233,7 +282,7 @@
 
   <!-- contact us JS -->
   <script src="{% static 'js/jquery.min.js' %}"></script>
-  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <!-- <script src="{% static 'js/jquery.validate.min.js' %}"></script> -->
   <script src="{% static 'js/main.js' %}"></script>
 
   <!-- 
