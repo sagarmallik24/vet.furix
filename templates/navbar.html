@@ -14,7 +14,8 @@
         <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
       </div>
 
-      <a href="{% url 'home' %}" class="logo" >FURIX</a>
+      <!-- <a href="{% url 'home' %}" class="logo" >FURIX</a> -->
+      <a href="{% url 'home' %}" class="logo" ><img src="{% static 'images/furixlogo.png' %}" width="170" height="auto" alt="logo"></img></a>
 
       <div class="header-action">
 
@@ -88,7 +89,7 @@
 
       </ul>
 
-      <ul class="sidebar-list">
+      <!-- <ul class="sidebar-list">
 
         <li>
           <p class="sidebar-list-title">Currency</p>
@@ -106,7 +107,7 @@
           <a href="#" class="sidebar-link">Pound</a>
         </li>
 
-      </ul>
+      </ul> -->
 
     </div>
 
@@ -121,14 +122,6 @@
           <a href="{% url 'about-us' %}" class="navbar-link" data-nav-link>About</a>
         </li>
 
-        <li class="navbar-item">
-          <a href="{% url 'home' %}" class="navbar-link" data-nav-link>Products</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="#blog" class="navbar-link" data-nav-link>Blogs</a>
-        </li>
-        
         <li class="navbar-item">
           <a href="{% url 'contact-us' %}" class="navbar-link" data-nav-link>Contact Us</a>
         </li>
