@@ -644,8 +644,8 @@ body.active { overflow: hidden; }
 
 .product-list[data-filter="all"] > *,
 .product-list[data-filter="accessory"] > .accessory,
-.product-list[data-filter="decoration"] > .decoration,
-.product-list[data-filter="furniture"] > .furniture {
+.product-list[data-filter="monitoring"] > .monitoring,
+.product-list[data-filter="surgical"] > .surgical {
   display: block;
   animation: fadeUp 1s ease forwards;
 }
