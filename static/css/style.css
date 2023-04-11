@@ -9,7 +9,9 @@
   --smokey-black: hsl(0, 0%, 7%);
   --spanish-gray: hsl(0, 0%, 60%);
   --granite-gray: hsl(0, 0%, 40%);
-  --tan-crayola: hsl(27, 46%, 58%);
+  --tan-crayola:#61AC4E;
+  /* --tan-crayola: hsl(115, 46%, 58%); */
+  /* --tan-crayola: hsl(27, 46%, 58%); */
   --light-gray: hsl(0, 0%, 80%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --black_25: hsla(0, 0%, 0%, 0.25);
